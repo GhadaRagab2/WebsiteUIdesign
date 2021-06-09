@@ -1,0 +1,639 @@
+:root {
+    --main-gr-color: rgb(46, 169, 173);
+    --main-bl-color: rgb(20, 35, 59);
+    --main-bla-color: rgb(31, 30, 30);
+    ;
+    }
+    
+    html {
+    font-size: 15px;
+    }
+    
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-colorrgb(236, 235, 235);
+    }
+    /* ============================== Global Styling ============================ */
+    
+    img {
+    width: 100%
+    }
+    
+    .container {
+    padding: 0 9%;
+    }
+    
+    .clearfix {
+    clear: both;
+    }
+    
+    a {
+    text-decoration: none;
+    display: inline-block;
+    }
+    
+    a:hover {
+    text-decoration: none;
+    }
+    
+    .row {
+    overflow: hidden;
+    }
+    
+    ul {
+    list-style: none;
+    }
+    
+    .overlay {
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    }
+    
+    section {
+    padding: 40px 0;
+    }
+    
+    .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    
+    .section-title h1 {
+    margin-bottom: 10px;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    li.hasmenu {
+    position: relative;
+    color: #222;
+    }
+    
+    .f-row {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    img {
+    width: 100%;
+    display: block;
+    }
+    /* ============================== /Global Styling ============================ */
+    /* ============================== Navbar Styling ============================ */
+    
+    nav .row {
+    overflow: visible !important;
+    }
+    
+    nav {
+    z-index: 9;
+    background-color: rgb(31, 30, 30);
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    }
+    
+    nav:hover {
+    overflow: visible;
+    }
+    
+    nav .row .logo {
+    float: left;
+    width: 20%;
+    text-decoration: none;
+    padding: 3px;
+    }
+    
+    nav .row .logo a b {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: var(--main-gr-color);
+    }
+    
+    nav .row .logo a {
+    text-transform: capitalize;
+    color: #fff;
+    }
+    
+    nav .row .logo a samp {
+    font-size: 30px;
+    }
+    
+    nav .nav-item {
+    float: left;
+    width: 72%;
+    }
+    
+    nav .nav-item li {
+    display: inline-block;
+    padding: 10px;
+    padding-bottom: 20px;
+    transition: background-color .4s ease-in-out;
+    transition: border .4s ease-in-out;
+    margin-left: 8px;
+    margin-top: 10px;
+    }
+    
+    nav .nav-item a {
+    color: #fff;
+    }
+    
+    nav .nav-item li.active a,
+    nav .nav-item li.nave a:hover {
+    color: var(--main-gr-color);
+    transition: color .3s ease-in-out;
+    }
+    
+    nav .contact .icon {
+    display: inline-block;
+    color: var(--main-gr-color);
+    margin-left: -1px;
+    margin-top: 20px;
+    }
+    
+    nav .contact .icon:hover .text {
+    opacity: 1;
+    width: 60px;
+    }
+    
+    nav .contact .icon .text {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    width: 20px;
+    opacity: 0;
+    transition: all ease-in-out .5s;
+    color: white;
+    }
+    
+    nav .contact .icon .text:focus {
+    outline: none;
+    }
+    
+    li.hasmenu ul.dropdown {
+    position: absolute;
+    background-color: #fff;
+    height: 260px;
+    width: 200px;
+    z-index: 3;
+    top: 200%;
+    left: 0%;
+    border-bottom: 3px solid var(--main-gr-color);
+    border-top: 3px solid var(--main-gr-color);
+    opacity: 0;
+    transition: all ease-in-out .5s;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 5px;
+    }
+    
+    li.hasmenu ul.dropdown li a.a {
+    color: #222;
+    }
+    
+    li.hasmenu ul.dropdown li {
+    display: block;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+    
+    .hasmenu:hover ul.dropdown {
+    opacity: 1;
+    top: 100%;
+    }
+    
+    .hasmenu ul.dropdown li:hover {
+    background-color: var(--main-gr-color);
+    border-radius: 10%;
+    }
+    /* ============================== /Navbar Styling ============================ */
+    /* ============================== Header Styling ============================ */
+    
+    header {
+    background-image: url('up/creative.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    }
+    
+    header .container {
+    padding: 5px 8%;
+    }
+    
+    header .content {
+    color: #fff;
+    width: 60%;
+    margin-top: 35vh;
+    margin-left: 40vh;
+    text-align: center;
+    }
+    
+    header .content p {
+    font-size: .8rem;
+    color: #aaa;
+    margin: 20px 0;
+    line-height: 18px;
+    }
+    
+    header .content h1 {
+    line-height: 30px;
+    }
+    
+    header .content a {
+    text-align: center;
+    color: #fff;
+    padding: 15px 30px;
+    border: 1px solid #fff;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: .8rem;
+    margin: 5px;
+    }
+    
+    div.container {
+    padding-top: 10;
+    }
+    
+    header .content a.bu {
+    border: none;
+    background-color: var(--main-gr-color) !important;
+    }
+    
+    header .content a.st {
+    transition: all ease-in-out .5s;
+    }
+    
+    header .content a.st:hover {
+    background-color: var(--main-gr-color) !important;
+    }
+    
+    #info {
+    margin-top: -100px;
+    margin-left: 90px;
+    }
+    
+    #info .row {
+    overflow: hidden;
+    }
+    
+    #info .row .active {
+    background-color: var(--main-gr-color) !important;
+    }
+    
+    #info .row .item .regester {
+    text-align: center;
+    color: #fff;
+    }
+    
+    #info .row .item {
+    float: left;
+    width: 30%;
+    margin: 10px 0;
+    margin: 10px 0;
+    background-color: var(--main-bla-color);
+    padding: 30px 20px;
+    }
+    
+    #info .row .item .number {
+    width: 40px;
+    height: 40px;
+    color: var(--main-gr-color);
+    background-color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 5px auto;
+    }
+    /* ============================== /Header Styling ============================ */
+    /* ============================== /Wellcom to bizman Styling ============================ */
+    
+    #about .row .item p {
+    margin: 10px 0;
+    }
+    
+    #about video {
+    margin-left: 100px;
+    margin-top: 70px;
+    }
+    
+    #about .row {
+    margin-left: 140px;
+    }
+    
+    #about .row .item {
+    float: left;
+    width: 50%;
+    }
+    
+    #about .row .item {
+    overflow: hidden;
+    margin: 20px 0;
+    }
+    
+    #about .row .info .btn {
+    background-color: var(--main-gr-color);
+    width: 120px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 5px;
+    border-radius: 10px;
+    }
+    
+    #about .row .info a {
+    color: #fff;
+    }
+    /* ============================== /Wellcom to bizman Styling ============================ */
+    /* ============================== Services Styling ============================ */
+    
+    #block .section-title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    }
+    
+    #block .row {
+    overflow: hidden;
+    margin-left: 125px;
+    }
+    
+    #block .container {
+    padding: 30px;
+    background-color: rgb(235, 232, 232);
+    }
+    
+    #block .row .item {
+    float: left;
+    width: 28.8%;
+    margin: 7px .6%;
+    background-color: rgb(246, 245, 245);
+    border: 1px solid rgb(209, 209, 209);
+    padding: 30px 20px;
+    text-align: center;
+    transition: all ease-in-out .5s;
+    position: relative;
+    }
+    
+    #block .row .item p {
+    line-height: 30px
+    }
+    
+    #block .row .item:hover {
+    background-color: var(--main-gr-color);
+    }
+    
+    #block .row div .fas {
+    font-size: 60px;
+    background-color: transparent;
+    opacity: 0.08;
+    z-index: .3;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    visibility: hidden;
+    transition: all ease-in-out .6s;
+    }
+    
+    #block .row .item:hover .fas {
+    visibility: visible;
+    left: 60px;
+    }
+    
+    #block .row .item .number {
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-bl-color);
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-left: 150px;
+    margin-left: 135px;
+    }
+    
+    #block .row .item h1 {
+    margin: 10px
+    }
+    
+    #block .row .item p {
+    z-index: 1;
+    margin-left: 0px;
+    margin-top: 2px
+    }
+    
+    #block-footer {
+    height: 11vh;
+    background-color: var(--main-bl-color);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 15px
+    }
+    
+    #block-footer a {
+    color: #eee;
+    background-color: transparent;
+    width: 120px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin-top: 0;
+    }
+    
+    #block-footer .info {
+    float: left;
+    margin: 0 10px;
+    }
+    
+    #block-footer .row {
+    margin-left: 480px
+    }
+    
+    #block-footer .info p {
+    margin-top: 8px
+    }
+    
+    #block-footer .row .btn {
+    margin-top: 1px
+    }
+    /* ============================== /Services Styling ============================ */
+    /* ============================== our team manger ============================ */
+    
+    #team .f-row {
+    justify-content: space-between;
+    }
+    
+    #team .f-row .item {
+    border-top: 4px solid var(--main-gr-color);
+    width: 22%;
+    }
+    
+    #team .f-row .item .img-holder {
+    position: relative;
+    height: 80%;
+    }
+    
+    #team .f-row .item img {
+    height: 100%;
+    }
+    
+    #team .f-row .item .overlay,
+    #team .f-row .item .social-links {
+    position: absolute;
+    transition: all .4s ease-in-out;
+    }
+    
+    #team .f-row .item .img-holder .overlay {
+    width: 100%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .5)
+    }
+    
+    #team .f-row .item:hover .overlay {
+    height: 100%;
+    }
+    
+    #team .f-row .item .social-links {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    right: -50%;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    transition-delay: .3s;
+    }
+    
+    #team .f-row .item:hover .social-links {
+    right: 0;
+    opacity: 1;
+    }
+    
+    #team .f-row .item .social-links li a {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    background-color: var(--main-gr-color);
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    }
+    
+    #team .f-row .item .info {
+    background-color: var(--main-gr-color);
+    text-align: center;
+    padding-bottom: 20px;
+    position: relative;
+    }
+    
+    #team .f-row .item .info h3 {
+    background-color: #222;
+    color: #eee;
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+    top: -20px;
+    }
+    
+    #team .f-row .item .info h6 {
+    font-size: 1.2rem;
+    color: #fff;
+    }
+    /* ============================== /our team manger ============================ */
+    /* ============================== Footer Styling ============================ */
+    
+    .footer {
+    height: 60vh;
+    background-color: black;
+    color: rgb(212, 195, 195);
+    padding-top: 70px;
+    padding-bottom: 90px;
+    padding-left: 190px;
+    padding-right: 190px;
+    /* margin-bottom: 50px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .content-f .row {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    /* .content-f .row{
+    justify-content: space-between;
+    } */
+    
+    .footer .content-f .row .item {
+    width: 25%;
+    margin-right: 70px;
+    }
+    
+    .content-f .row a {
+    text-decoration: none;
+    color: #aaa
+    }
+    
+    .content-f .row h3 {
+    color: rgb(179, 175, 175);
+    }
+    
+    .content-f .row p {
+    padding: 20px 0;
+    }
+    
+    .content-f .row .item .btn {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    }
+    
+    .content-f .row .item .sub {
+    background: transparent;
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    color: rgb(129, 126, 126);
+    }
+    
+    .content-f .row .item .text {
+    background: transparent;
+    width: 230px;
+    height: 30px;
+    color: #aaa;
+    border: none;
+    border-bottom: 1px solid rgb(92, 91, 91);
+    margin-top: 15px
+    }
+    
+    .content-f .row .item .qiuck {
+    margin-top: 10px;
+    }
+    
+    .content-f .row .item .social-info {
+    margin-top: 10px;
+    color: var(--main-gr-color);
+    }
+    
+    .content-f .row .item .social-info i {
+    padding-right: 30px
+    }
+    /* ============================== /Footer Styling ============================ */
